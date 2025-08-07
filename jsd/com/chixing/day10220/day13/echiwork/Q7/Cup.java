@@ -21,7 +21,7 @@ public class Cup implements MyCompare {
         .thenComparingDouble(Cup::getPrice)
         .thenComparing(Cup::getId)
         .compare(this, that);
-
+    }
 
     public String getId() {
         return id;

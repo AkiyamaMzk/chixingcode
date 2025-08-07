@@ -12,6 +12,14 @@ public class TagTest {
         Article art1 = new Article("Iseka");
         Article art2 = new Article("Radio");
         Article art3 = new Article("planet");
+        art1.addTag("anime");
+        art1.addTag("isekai");
+        art2.addTag("anime");
+        art2.addTag("radio");
+        art3.addTag("anime");
+        art3.addTag("planet");
+
+        
         artList.add(art1);
         artList.add(art2);
         artList.add(art3);

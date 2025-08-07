@@ -1,9 +1,12 @@
 package chixing.dayNull;
 
-public class SimpleProduct {
+import java.util.Comparator;
+
+public class SimpleProduct implements Comparable{
     private String name;
     private double price;
 
+    public SimpleProduct(){}
     
     public SimpleProduct(String name, double price) {
         this.name = name;
@@ -52,6 +55,15 @@ public class SimpleProduct {
         if (Double.doubleToLongBits(price) != Double.doubleToLongBits(other.price))
             return false;
         return true;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        SimpleProduct that=(SimpleProduct) o;
+        return Comparator
+                .comparing(SimpleProduct::getName)
+                .thenComparingDouble(SimpleProduct::getPrice)
+                .compare(this,that);
     }
     
 }

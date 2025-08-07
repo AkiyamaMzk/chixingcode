@@ -1,5 +1,7 @@
 package chixing.day10220.day13.echiwork.Q7;
 
+import java.util.Comparator;
+
 public class Cup implements MyCompare {
     // 编号，名称，价格，产地，颜色，容量
     private String id;
@@ -10,7 +12,7 @@ public class Cup implements MyCompare {
     private double capacity;
 
     @Override
-    public int compare(Object o) {
+    public int compareTo(Object o) {
         if (this == o)
             return 0;
         if (!(o instanceof Cup))
@@ -46,5 +48,13 @@ public class Cup implements MyCompare {
     public double getCapacity() {
         return capacity;
     }
+
+    @Override
+    public int compare(Object o) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'compare'");
+    }
+
+
 
 }

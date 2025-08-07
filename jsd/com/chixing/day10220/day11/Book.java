@@ -1,6 +1,9 @@
 package chixing.day10220.day11;
 
-public class Book {
+import java.util.Comparator;
+
+
+public class Book implements Comparable{
 
     private String bookName;
     private double bookPrice;
@@ -60,5 +63,15 @@ public class Book {
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
+    @Override
+    public int compareTo(Object o){
+        Book book = (Book) o;
+        return Comparator
+                .comparing(Book::getBookName)
+                .thenComparingDouble(Book::getBookPrice)
+                .compare(this, book);
+        
+    }
+    
 
 }

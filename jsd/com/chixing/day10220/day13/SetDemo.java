@@ -2,6 +2,7 @@ package chixing.day10220.day13;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 import chixing.day10220.day11.Book;
 
@@ -15,7 +16,7 @@ public class SetDemo {
             System.out.println(s);
         }
         System.out.println();
-        Set<Book> bookset = new HashSet<>();
+        Set<Book> bookset = new TreeSet<>();
         bookset.add(new Book("java程序设计", 10));
         bookset.add(new Book("c++程序设计", 20));
         bookset.add(new Book("py程序设计", 30));
@@ -26,9 +27,5 @@ public class SetDemo {
             }
             System.out.println(b);
         }
-
-        String s="123";
-        s.compareTo(s);
-
     }
 }

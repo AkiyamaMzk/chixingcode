@@ -16,17 +16,12 @@ public class Cup implements MyCompare {
         if (!(o instanceof Cup))
             return 0;
         Cup that = (Cup) o;
-        if (this.name.equals(that.getName())) {
-            if (this.price == that.getPrice()) {
-                if (this.id.equals(that.getId())) {
-                    return 0;
-                }
-                return this.id.compareTo(that.getId());
-            }
-            return this.name.compareTo(that.getName());
-        }
-        return Double.compare(this.price, that.getPrice());
-    }
+        return Comparator
+        .comparing(Cup::getName)
+        .thenComparingDouble(Cup::getPrice)
+        .thenComparing(Cup::getId)
+        .compare(this, that);
+
 
     public String getId() {
         return id;

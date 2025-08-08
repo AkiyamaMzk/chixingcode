@@ -24,7 +24,6 @@ public class PhoneList {
             phoneList.add(new Phone("苹果", "iphone 12", 1777));
         }
         Map<String, List<Phone>> phoneMap = new HashMap<>();
-        
         for (Phone phone : phoneList) {
             if (!phoneMap.containsKey(phone.getBrand()))
                 phoneMap.put(phone.getBrand(), new ArrayList<>());
@@ -33,6 +32,5 @@ public class PhoneList {
         for (Map.Entry<String, List<Phone>> entry : phoneMap.entrySet()) {
             System.out.println(entry.getKey() + ":" + entry.getValue());
         }
-
     }
 }

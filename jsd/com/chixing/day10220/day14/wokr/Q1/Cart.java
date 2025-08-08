@@ -45,7 +45,9 @@ public class Cart{ // 容器
 		for (Product product : productList) {
 			System.out.println(product);
 		}
+		
 	}
+	
 	public double getPriceSum(){
 		return priceSum;
 	}

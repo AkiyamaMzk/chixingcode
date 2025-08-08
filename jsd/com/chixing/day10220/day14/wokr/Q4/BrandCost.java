@@ -36,9 +36,10 @@ public class BrandCost {
             list.add(p8);
         }
         HashMap<String, Double> map = new HashMap<>();
-        for (Product product : list) {
-            map.put(product.getBrand(), (Double) map.getOrDefault(product.getBrand(), 0.0) + product.getPrice());
-        }
+        // for (Product product : list) {
+        //     map.put(product.getBrand(), (Double) map.getOrDefault(product.getBrand(), 0.0) + product.getPrice());
+        // }
+        
         for (Map.Entry<String, Double> entry : map.entrySet()) {
             System.out.println(entry.getKey() + " 总花费: " + entry.getValue());
         }

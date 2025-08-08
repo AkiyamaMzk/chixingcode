@@ -1,6 +1,6 @@
 package chixing.day1210.day02;
 
-import java.lang.invoke.ConstantBootstraps;
+
 
 public class BasicSyntaxDemo {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package chixing.day1210.day02;
 
-import java.util.ArrayList;
+
 import java.util.Arrays;
 import java.util.Scanner;
 

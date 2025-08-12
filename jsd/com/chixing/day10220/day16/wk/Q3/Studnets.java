@@ -29,5 +29,6 @@ public class Studnets {
         for (SimpleStudent simpleStudent : studentList) {
             System.out.println(simpleStudent);
         }
+        
     }
 }

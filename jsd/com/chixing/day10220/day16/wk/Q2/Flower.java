@@ -3,13 +3,10 @@ package chixing.day10220.day16.wk.Q2;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.DateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.text.DateFormatter;
 
 public class Flower {
     public static void main(String[] args) {
@@ -22,10 +19,10 @@ public class Flower {
             while ((line = bridget.readLine()) != null) {// 读取整行
                 String[] parts = line.split("\\|");
                 LocalDateTime time;
-                if (parts[5] == null)
+                if (parts[5].equals("null"))
                     time = null;
                 else {
-                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("YYYYMMDDHHMMSS");
+                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
                     time = LocalDateTime.parse(parts[5], formatter);
                 }
                 flos.add(new Record(parts[0], parts[1], parts[2], parts[3] == "1" ? 'M' : 'F', parts[4], time,

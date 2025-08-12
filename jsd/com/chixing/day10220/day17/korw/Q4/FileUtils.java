@@ -7,9 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
-
 import chixing.day10220.day17.FileUtil;
-
 import java.io.FileOutputStream;
 import java.io.FileReader;
 

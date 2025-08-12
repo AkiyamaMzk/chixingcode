@@ -1,4 +1,4 @@
-package chixing.day10220.dat17;
+package chixing.day10220.day17;
 
 import java.io.File;
 import java.io.FileInputStream;

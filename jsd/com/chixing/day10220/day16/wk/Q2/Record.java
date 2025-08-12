@@ -23,6 +23,10 @@ public class Record {
         this.prAmount = prPrice;
     }
 
+    public LocalDateTime getPyDate() {
+        return pyDate;
+    }
+
     @Override
     public String toString() {
         return "Record [recordId=" + recordId + ", userId=" + userId + ", institutionCode=" + institutionCode

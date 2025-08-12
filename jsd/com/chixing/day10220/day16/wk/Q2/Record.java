@@ -10,7 +10,7 @@ public class Record {
     private char gender;
     private String waterCode;//流水号
     private LocalDateTime pyDate;//交易日期
-    private double prAmount;//交易金额
+    private double pyAmount;//交易金额
     
     public Record(String recordId, String userId, String institutionCode, char gender, String waterCode,
             LocalDateTime pyDate, double prPrice) {

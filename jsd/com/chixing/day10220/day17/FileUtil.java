@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class FileUtils {
+public class FileUtil {
     public static File fileCopy(File orangeFile, String destPath) {
         File destFile=new File(destPath,orangeFile.getName());
         try (InputStream is = new FileInputStream(orangeFile); OutputStream os = new FileOutputStream(destFile)) {

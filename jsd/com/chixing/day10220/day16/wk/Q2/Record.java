@@ -20,7 +20,7 @@ public class Record {
         this.gender = gender;
         this.waterCode = waterCode;
         this.pyDate = pyDate;
-        this.prAmount = prPrice;
+        this.pyAmount = prPrice;
     }
 
     public LocalDateTime getPyDate() {
@@ -30,7 +30,7 @@ public class Record {
     @Override
     public String toString() {
         return "Record [recordId=" + recordId + ", userId=" + userId + ", institutionCode=" + institutionCode
-                + ", gender=" + gender + ", waterCode=" + waterCode + ", pyDate=" + pyDate + ", prPrice=" + prAmount
+                + ", gender=" + gender + ", waterCode=" + waterCode + ", pyDate=" + pyDate + ", prPrice=" + pyAmount
                 + "]";
     }
     

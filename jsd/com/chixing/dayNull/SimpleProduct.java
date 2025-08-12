@@ -26,7 +26,7 @@ public class SimpleProduct implements Comparable{
     }
     @Override
     public String toString() {
-        return "SimpleProduct [name=" + name + ", price=" + price + "]";
+        return "name=" + name + ", price=" + price;
     }
     @Override
     public int hashCode() {

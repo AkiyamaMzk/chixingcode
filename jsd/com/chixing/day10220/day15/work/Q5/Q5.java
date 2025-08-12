@@ -33,16 +33,18 @@ class LRUCache extends LinkedHashMap {
         return super.put(key, value);
     }
 
-    public Object update(Object key, Object value){
-        //更新值不改变顺序
+    public Object update(Object key, Object value) {
+        // 更新值不改变链表顺序
+        Object oldValue=null;
         for (Object object : super.entrySet()) {
-            Map.Entry<Integer,Integer> entry=(Map.Entry)object;
-            if(Objects.equals(entry.getKey(), key))
-                entry.setValue((int)value);
-        }//没有提交链接
-        return null;
+            Map.Entry<Integer, Integer> entry = (Map.Entry) object;
+            if (Objects.equals(entry.getKey(), key)) {
+                oldValue=entry.getValue();
+                entry.setValue((int) value);
+            }
+        }
+        return oldValue;
     }
-
 }
 
 public class Q5 {
@@ -67,7 +69,6 @@ public class Q5 {
         } catch (Exception e) {
             System.out.println("EOF");
         }
-
     }
 
 }

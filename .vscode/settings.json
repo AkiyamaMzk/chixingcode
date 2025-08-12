@@ -2,11 +2,15 @@
   "java.project.sourcePaths": [
     "jsd\\com"
   ],
-  "java.project.referencedLibraries": [],
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar"
+  ],
   "java.format.settings.url": ".vscode/java-formatter.xml",
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
   },
   "editor.formatOnSave": true,
-  "commentTranslate.source": "Google"
+  "commentTranslate.source": "Google",
+  "commentTranslate.hover.enabled": true,
+  "commentTranslate.browse.mode": "inplace"
 }

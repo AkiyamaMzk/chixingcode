@@ -34,7 +34,6 @@ public class FileUtils extends FileUtil {
 
     /**
      * 将字符串写入目标文件
-     * 
      * @param fileurl 要写入的文件地址
      * @param s       写入的字符串
      * @param append  开启时将在文件结尾添加写入的字符串，否则未覆盖
@@ -57,7 +56,6 @@ public class FileUtils extends FileUtil {
 
     /**
      * 将目标文件作为字符串读取
-     * 
      * @param fileUrl 读取的文件
      * @return
      */

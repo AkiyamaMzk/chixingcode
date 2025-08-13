@@ -15,7 +15,7 @@ public class Employee extends SimpleEmployee {
 
     @Override
     public String toString() {
-        return empId + "," + this.getEmpName()+","+this.getEmpSalary();
+        return empId + "\t" + this.getEmpName()+"\t"+this.getEmpSalary();
     }
 
 }

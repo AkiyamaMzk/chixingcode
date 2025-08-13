@@ -6,42 +6,39 @@ import java.util.List;
 
 public class salariesDemo {
     public static void main(String[] args) {
+        File salaries = FileUtils.createFile("jsd\\com\\chixing\\day10220\\day17\\korw\\Q4", "salaries.txt");
+        File highSalaryReport = FileUtils.createFile("jsd\\com\\chixing\\day10220\\day17\\korw\\Q4","high_salary_report.txt");
+        List<Employee> employeeList = new ArrayList<>();
         { // 添加
             String s = """
-                    empId,empName,empSalary
-                    1001,张三,850.00
-                    1002,李四,920.00
-                    1003,王五,780.00
-                    1004,赵六,10500.00
-                    1005,钱七,9500.00
-                    1006,孙八,11000.00
-                    1007,周九,8800.00
-                    1008,吴十,12500.00
-                    1009,郑十一,10200.00
-                    1010,冯十二,11500.00
+                    empId\tempName\tempSalary
+                    1001\t张三\t850.00
+                    1002\t李四\t920.00
+                    1003\t王五\t780.00
+                    1004\t赵六\t10500.00
+                    1005\t钱七\t9500.00
+                    1006\t孙八\t11000.00
+                    1007\t周九\t8800.00
+                    1008\t吴十\t12500.00
+                    1009\t郑十一\t10200.00
+                    1010\t冯十二\t11500.00
                         """;
-            FileUtils.createFile("jsd\\com\\chixing\\day10220\\day17\\korw\\Q4", "salaries.txt");
-            FileUtils.writeToFile("jsd\\com\\chixing\\day10220\\day17\\korw\\Q4\\salaries.txt", s, false);
+            FileUtils.writeToFile(salaries, s, false);
+            FileUtils.writeToFile(highSalaryReport, "empId\tempName\tempSalary\n", false);
             ;
         }
+        dataProcessing(salaries, highSalaryReport, employeeList);
+        
+    }
 
-        List<Employee> employeeList = new ArrayList<>();
-        File file = new File("jsd\\com\\chixing\\day10220\\day17\\korw\\Q4\\salaries.txt");
-        FileUtils.createFile("jsd\\com\\chixing\\day10220\\day17\\korw\\Q4", "high_salary_report.txt");
-        FileUtils.writeToFile("jsd\\com\\chixing\\day10220\\day17\\korw\\Q4\\high_salary_report.txt",
-                "empId,empName,empSalary\n", false);
 
-        for (String line : FileUtils.readFromFilebyline(file, true)) {
-            String[] parts = line.split(",");
+    static void dataProcessing(File salaries, File highSalaryReport, List<Employee> employeeList) {
+        for (String line : FileUtils.readFromFilebyline(salaries, true)) {
+            String[] parts = line.split("\t");
             Employee employee = new Employee(Integer.parseInt(parts[0]), parts[1], Double.parseDouble(parts[2]));
             employeeList.add(employee);
             if (employee.getEmpSalary() > 2000)
-                FileUtils.writeToFile("jsd\\com\\chixing\\day10220\\day17\\korw\\Q4\\high_salary_report.txt",
-                        employee.toString() + "\n", true);
+                FileUtils.writeToFile(highSalaryReport, employee + "\n", true);
         }
-        for (Employee employee : employeeList) {
-            System.out.println(employee);
-        }
-
     }
 }

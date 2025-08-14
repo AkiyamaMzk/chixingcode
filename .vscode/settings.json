@@ -10,7 +10,7 @@
     "source.organizeImports": "explicit"
   },
   "editor.formatOnSave": true,
-  "commentTranslate.source": "Google",
+  "commentTranslate.source": "Copilot",
   "commentTranslate.hover.enabled": true,
   "commentTranslate.browse.mode": "inplace"
 }

@@ -1,7 +1,7 @@
 package chixing.day10220.day18.echiwork.Q4;
 
-public class Printer extends Thread {
-    private static synchronized void printDocument(String documentName) {
+public class Printer implements Runnable {
+    private  synchronized void printDocument(String documentName) {
         System.out.println("正在打印:" + documentName);
         try {
             Thread.sleep(2000);
@@ -14,7 +14,7 @@ public class Printer extends Thread {
 
     @Override
     public void run() {
-        printDocument(this.getName());
+        printDocument(Thread.currentThread().getName());
     }
 
 }

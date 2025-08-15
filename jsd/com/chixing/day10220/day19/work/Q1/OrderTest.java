@@ -31,7 +31,5 @@ public class OrderTest {
             task1.start();
             task2.start();
             task3.start();
-        
     }
-
 }

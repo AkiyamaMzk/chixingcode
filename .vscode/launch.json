@@ -1,0 +1,868 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "--add-opens java.base/java.lang=ALL-UNNAMED"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day20.proxy.cgclib.CGlibTest",
+            "vmArgs": "--add-opens java.base/java.lang=ALL-UNNAMED"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CloneDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day11.CloneDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "DataTransfer",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day11.DataTransfer",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "PricingTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day11.worrrrrrk.Q10.PricingTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "PayTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day11.worrrrrrk.Q8.PayTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "applicantTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day11.worrrrrrk.Q9.applicantTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "AccTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day12.AccTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ListDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day12.ListDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "TryDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day12.TryDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "BoxingDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day12.boxing.BoxingDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "exceptionDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day12.exceptionDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "pointTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day12.generic.pointTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "LibTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day12.hwork.Q10.LibTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "AddressTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day12.hwork.Q7.AddressTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "CourseTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day12.hwork.Q8.CourseTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "SetDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day13.SetDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "RegisterSystem",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day13.echiwork.Q2.RegisterSystem",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Q3",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day13.echiwork.Q3",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Q4",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day13.echiwork.Q4",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "BandCost",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day13.echiwork.Q5.BandCost",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "TagTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day13.echiwork.Q6.TagTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "MapTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day14.map.MapTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "SetDemo(1)",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day14.map.SetDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "CartTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day14.wokr.Q1.CartTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "NumCount",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day14.wokr.Q2.NumCount",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "TelFind",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day14.wokr.Q3.TelFind",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "BrandCost",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day14.wokr.Q4.BrandCost",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "RecTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day14.wokr.Q5.RecTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "DateDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day15.DateDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "MathTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day15.MathTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "FileDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day15.io.FileDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "CatRest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day15.work.Q1.CatRest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "WorldIsMost",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day15.work.Q2.WorldIsMost",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "OnlyHash",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day15.work.Q3.OnlyHash",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "PhoneList",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day15.work.Q4.PhoneList",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Q5",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day15.work.Q5.Q5",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "InputStreamDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day16.nwk.InputStreamDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "OPStreamDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day16.nwk.OPStreamDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ReadDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day16.nwk.ReadDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "WriterDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day16.nwk.WriterDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "CopyDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day16.wk.Q1.CopyDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Flower",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day16.wk.Q2.Flower",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ReflectDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day17.ReflectDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Season",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day17.Season",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "warehouseDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day17.korw.Q3.warehouseDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "salariesDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day17.korw.Q4.salariesDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ThreadTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day18.ThreadTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "PrinterDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day18.echiwork.Q4.PrinterDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "TickTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day18.echiwork.Qextra.TickTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "CialloDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day18.echiwork.hello.CialloDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "AccountTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day18.synchronized_demo.AccountTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "TickTest(1)",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day19.LocalThread.Qextra.TickTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ThreadLocalDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day19.LocalThread.ThreadLocalDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ThreadPoolDemo",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day19.Pool.ThreadPoolDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ResourceTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day19.ResourceTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "OrderTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day19.work.Q1.OrderTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day19.work.Q2.Main",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "CGlibTest",
+            "request": "launch",
+            "mainClass": "chixing.day10220.day20.proxy.cgclib.CGlibTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ArrayDemo",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day01.ArrayDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "helloworld",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day01.helloworld",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "BasicSyntaxDemo",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day02.BasicSyntaxDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "IfelseDemo",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day02.IfelseDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "OperationDemo",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day02.OperationDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "whileDemo",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day02.whileDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "work2",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day02.work2",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "work22",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day02.work22",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ArrayDemo(1)",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day03.ArrayDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "MethodDemo",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day03.MethodDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "SortDemo",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day03.SortDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day03.test",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ArrayDemo(2)",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day04.ArrayDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "BankTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day04.BankTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "CompanyTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day04.CompanyTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "JobTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day04.JobTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "MethodOverload",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day04.MethodOverload",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "PersonTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day04.PersonTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "PhoneTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day04.PhoneTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "work4",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day04.work4",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "BookTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day05.BookTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "CarTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day05.CarTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ComputerTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day05.ComputerTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "DishTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day05.DishTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "MyContainerTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day05.MyContainerTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ProductTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day05.ProductTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ShopTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day05.ShopTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "CustomerTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day06.homework.CustomerTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "OrderTest(1)",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day06.homework.OrderTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "UserTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day06.homework.UserTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ChangeToMax",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day06.homework.nextwork.ChangeToMax",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "AccountTest(1)",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day06.inherited.AccountTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "AnimalTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day07_inherited.AnimalTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "DiscountProductTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day07_inherited.DiscountProductTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "EmployeeTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day07_inherited.EmployeeTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "EqualsDemo",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day07_inherited.EqualsDemo",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day07_inherited.Test",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Question2$Test",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day07_inherited.homework.Question2$Test",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Question5",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day07_inherited.homework.Question5",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "EmployeeMain",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day07_inherited.homework.Question6.EmployeeMain",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "productTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day07_inherited.productTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "AbstractTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day08_abstract.abstract_demo.AbstractTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ProductTest(1)",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day08_abstract.abstract_demo.ProductTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "AccountMain",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day08_abstract.homework.Q10.AccountMain",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "StudentMain",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day08_abstract.homework.Q10.StudentMain",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Test(1)",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day08_abstract.homework.Test",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "B",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day08_abstract.static_demo.B",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "StudentTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day08_abstract.static_demo.StudentTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "test(1)",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day08_abstract.static_demo.test",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "CpuTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day09_static_interface.interfaces.CpuTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "MusicTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day09_static_interface.interfaces.homework.Q4.MusicTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "ProductTest(2)",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day09_static_interface.interfaces.homework.Q5.ProductTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "LogTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day09_static_interface.interfaces.homework.Q7.LogTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Computer",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day09_static_interface.interfaces.work1.Computer",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "BankTest(1)",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day10.BankTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "CustomerTest(1)",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day10.innerclass.CustomerTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "OuterTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day10.innerclass.OuterTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Encryption",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day10.workwork.Encryption",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "OrderTest(2)",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day10.workwork.Q17_old.OrderTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "waterTest",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day10.workwork.Q19.waterTest",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Reverse",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day10.workwork.Reverse",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "getOnlyChar",
+            "request": "launch",
+            "mainClass": "chixing.day1210.day10.workwork.getOnlyChar",
+            "projectName": "workspace_f5ca0307"
+        },
+        {
+            "type": "java",
+            "name": "Test(2)",
+            "request": "launch",
+            "mainClass": "chixing.dayNull.Test",
+            "projectName": "workspace_f5ca0307"
+        }
+    ]
+}

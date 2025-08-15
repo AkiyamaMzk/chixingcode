@@ -1,8 +1,7 @@
-package chixing.day10220.day18.echiwork.Qextra;
+package chixing.day10220.day19.LocalThread.Qextra;
 
 public class TicketSeller implements Runnable {
-    private  int tickets ;
-    
+    private int tickets;
 
     public TicketSeller(int tickets) {
         this.tickets = tickets;
@@ -36,7 +35,7 @@ public class TicketSeller implements Runnable {
 
     }
 
-    public  void setTickets(int tickets) {
+    public void setTickets(int tickets) {
         this.tickets = tickets;
     }
 

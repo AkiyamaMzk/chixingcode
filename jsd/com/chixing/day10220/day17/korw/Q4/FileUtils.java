@@ -18,7 +18,7 @@ public class FileUtils extends FileUtil {
      * @param fileName 创建文件名称
      * @return  创建后的文件
      */
-    static File createFile(String url, String fileName) {
+    public static File createFile(String url, String fileName) {
         File dir = new File(url);
         if (!dir.isDirectory())
             throw new IllegalArgumentException("不是文件夹地址");
@@ -32,7 +32,7 @@ public class FileUtils extends FileUtil {
         return null;
     }
 
-    static File createFile(File file) {
+    public static File createFile(File file) {
         try {
             file.createNewFile();
         } catch (IOException e) {
@@ -48,7 +48,7 @@ public class FileUtils extends FileUtil {
      * @param append  开启时把写入的字符串添加到文件结尾，否则覆盖原文件
      * @return 进行写入后的文件
      */
-    static File writeToFile(String fileurl, String s, boolean append) {
+    public static File writeToFile(String fileurl, String s, boolean append) {
         try (OutputStream os = new FileOutputStream(fileurl, append);) {
             os.write(s.getBytes());
             os.flush();
@@ -59,7 +59,7 @@ public class FileUtils extends FileUtil {
         }
     }
 
-    static File writeToFile(File file, String s, boolean append) {
+    public static File writeToFile(File file, String s, boolean append) {
         return writeToFile(file.getAbsolutePath(), s, append);
     }
 
@@ -68,7 +68,7 @@ public class FileUtils extends FileUtil {
      * @param fileUrl 读取的文件
      * @return  读取的字符串
      */
-    static String readFromFile(String fileUrl) {
+    public static String readFromFile(String fileUrl) {
         try (InputStream is = new FileInputStream(fileUrl);) {
             String read = new String(is.readAllBytes());
             return read;
@@ -78,7 +78,7 @@ public class FileUtils extends FileUtil {
         }
     }
 
-    static String readFromFile(File file) {
+    public static String readFromFile(File file) {
         return readFromFile(file.getAbsolutePath());
     }
 
@@ -88,7 +88,7 @@ public class FileUtils extends FileUtil {
      * @param dropFirstLine 是否跳过第一行
      * @return  String[]的每一个元素为源文件中一行字符
      */
-    static String[] readFromFilebyline(String fileUrl, boolean dropFirstLine) {
+    public static String[] readFromFilebyline(String fileUrl, boolean dropFirstLine) {
         try (BufferedReader br = new BufferedReader(new FileReader(fileUrl));) {
             ArrayList<String> res = new ArrayList<>();
             if (dropFirstLine)
@@ -102,7 +102,7 @@ public class FileUtils extends FileUtil {
         }
     }
 
-    static String[] readFromFilebyline(File file, boolean dropFirstLine) {
+    public static String[] readFromFilebyline(File file, boolean dropFirstLine) {
         return readFromFilebyline(file.getAbsolutePath(), dropFirstLine);
     }
 

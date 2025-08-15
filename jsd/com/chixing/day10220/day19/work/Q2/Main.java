@@ -13,5 +13,6 @@ public class Main {
 
         manager.printHistory("SendInterviewTask");
         manager.printAllHistory();
+        manager.saveData();
     }
 }

@@ -1,10 +1,13 @@
 package chixing.day10220.day19.work.Q2;
 
+import java.io.File;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import chixing.dayNull.SimpleFileUtils;
 
 public class TaskManager {
     private Map<String, Task> taskManager = new HashMap<>();
@@ -20,8 +23,14 @@ public class TaskManager {
     }
 
     public void executeTask(String name) {
-        System.out.println("执行任务:" + getTaskByName(name).getName());
-        getTaskByName(name).execute();
+        Task task = getTaskByName(name);
+        System.out.println("执行任务:" + task.getName());
+        new Thread(() -> {
+            task.execute(); // 调用任务逻辑
+            synchronized (this) { // 同步更新历史
+                taskHistory.computeIfAbsent(name, k -> new ArrayList<>()).add(LocalDateTime.now());
+            }
+        }).start();
         if (!taskHistory.containsKey(name))
             taskHistory.put(name, new ArrayList<>());
         taskHistory.get(name).add(LocalDateTime.now());
@@ -29,9 +38,12 @@ public class TaskManager {
 
     public void printHistory(String name) {
         for (Map.Entry<String, List<LocalDateTime>> entry : taskHistory.entrySet()) {
-            System.out.println(entry.getKey());
-            for (LocalDateTime time : entry.getValue()) {
-                System.out.println(time);
+            {
+                if (entry.getKey().equals(name));
+                System.out.println(entry.getKey());
+                for (LocalDateTime time : entry.getValue()) {
+                    System.out.println(time);
+                }
             }
         }
     }
@@ -40,6 +52,19 @@ public class TaskManager {
         for (String name : taskManager.keySet()) {
             System.out.println(name + ":");
             printHistory(name);
+        }
+
+    }
+
+    public void saveData() {
+        File file = SimpleFileUtils.createFile("jsd\\com\\chixing\\day10220\\day19\\work\\Q2\\save", "savedata.json");
+        for (Map.Entry<String, List<LocalDateTime>> entry : taskHistory.entrySet()) {
+            {
+                SimpleFileUtils.writeToFile(file, entry.getKey(), true);
+                for (LocalDateTime time : entry.getValue()) {
+                    SimpleFileUtils.writeToFile(file, time.toString(), true);
+                }
+            }
         }
 
     }

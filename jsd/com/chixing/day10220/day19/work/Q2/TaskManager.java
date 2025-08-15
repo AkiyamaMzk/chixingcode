@@ -1,6 +1,7 @@
 package chixing.day10220.day19.work.Q2;
 
 import java.io.File;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,18 +32,16 @@ public class TaskManager {
                 taskHistory.computeIfAbsent(name, k -> new ArrayList<>()).add(LocalDateTime.now());
             }
         }).start();
-        if (!taskHistory.containsKey(name))
-            taskHistory.put(name, new ArrayList<>());
-        taskHistory.get(name).add(LocalDateTime.now());
     }
 
     public void printHistory(String name) {
         for (Map.Entry<String, List<LocalDateTime>> entry : taskHistory.entrySet()) {
             {
-                if (entry.getKey().equals(name));
-                System.out.println(entry.getKey());
-                for (LocalDateTime time : entry.getValue()) {
-                    System.out.println(time);
+                if (entry.getKey().equals(name)) {
+                    System.out.println(entry.getKey());
+                    for (LocalDateTime time : entry.getValue()) {
+                        System.out.println(time);
+                    }
                 }
             }
         }
@@ -57,16 +56,17 @@ public class TaskManager {
     }
 
     public void saveData() {
-        File file = SimpleFileUtils.createFile("jsd\\com\\chixing\\day10220\\day19\\work\\Q2\\save", "savedata.json");
+        File file = SimpleFileUtils.createFile("jsd\\com\\chixing\\day10220\\day19\\work\\Q2\\save",
+                "savedata_" + LocalDate.now().toString() + ".json");
         for (Map.Entry<String, List<LocalDateTime>> entry : taskHistory.entrySet()) {
             {
-                SimpleFileUtils.writeToFile(file, entry.getKey(), true);
+                SimpleFileUtils.writeToFile(file, entry.getKey() + "\n", true);
                 for (LocalDateTime time : entry.getValue()) {
-                    SimpleFileUtils.writeToFile(file, time.toString(), true);
+                    SimpleFileUtils.writeToFile(file, time.toString() + "\n", true);
                 }
             }
         }
-
+        System.out.println("保存成功!");
     }
 
 }

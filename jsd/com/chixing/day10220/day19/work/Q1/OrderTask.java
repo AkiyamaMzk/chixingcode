@@ -3,7 +3,6 @@ package chixing.day10220.day19.work.Q1;
 import java.util.HashSet;
 import java.util.Set;
 
-import chixing.day1210.day05.Video;
 
 public class OrderTask implements Runnable {
     private Order order;

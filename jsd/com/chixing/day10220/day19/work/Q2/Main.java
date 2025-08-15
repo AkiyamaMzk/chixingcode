@@ -11,6 +11,12 @@ public class Main {
         manager.executeTask("GenerateReportTask");
         manager.executeTask("SendInterviewTask");
 
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         manager.printHistory("SendInterviewTask");
         manager.printAllHistory();
         manager.saveData();

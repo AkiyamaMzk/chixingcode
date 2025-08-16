@@ -5,19 +5,19 @@ public class Contract {
     private String supplier;
     private String department;
     private double contractAmount;
-    private ContractStatus contractStatus=ContractStatus.DRAFT;
+    private ContractStatus contractStatus = ContractStatus.DRAFT;
 
     public enum ContractStatus {
         DRAFT, PENDING_APPROVAL, APPROVED, REJECTED, COMPLETED
     }
 
     public Contract(String contractId, String supplier, String department, double contractAmount,
-                    ContractStatus contractStatus) {
+            ContractStatus contractStatus) {
         this.contractId = contractId;
         this.supplier = supplier;
         this.department = department;
         this.contractAmount = contractAmount;
-        this.contractStatus = contractStatus; 
+        this.contractStatus = contractStatus;
     }
 
     public String getContractId() {

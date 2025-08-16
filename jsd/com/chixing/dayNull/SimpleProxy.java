@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 public class SimpleProxy implements InvocationHandler {
-    private Object target;
+    protected Object target;
 
     public SimpleProxy(Object target) {
         this.target = target;
